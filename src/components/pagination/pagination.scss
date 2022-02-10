@@ -1,0 +1,89 @@
+@import "../../config/colors.scss";
+
+.btnPrev {
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+  font-size: 2em;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  padding: 2px;
+  background-color: #00d0fa41;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btnPrev:hover {
+  background-color: #00d0fabd;
+}
+
+.btnNext {
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+  font-size: 2em;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  padding: 2px;
+  background-color: #00d0fa41;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.liContentPagination {
+  color: $color-white;
+  font-size: 1.5em;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  padding: 2px;
+  //   background-color: $color-cyan-neon;
+  background-color: $color-black;
+  text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+    $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+    $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+    $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnNext:hover {
+  background-color: #00d0fabd;
+}
+
+.active {
+  color: $color-white;
+  font-size: 1.5em;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  padding: 2px;
+  //   background-color: $color-cyan-neon;
+  background-color: $color-black;
+  text-shadow: $color-yellow-neon 0px 0px 5px, $color-yellow-neon 0px 0px 10px,
+    $color-yellow-neon 0px 0px 15px, $color-yellow-neon 0px 0px 20px,
+    $color-yellow-neon 0px 0px 30px, $color-yellow-neon 0px 0px 40px,
+    $color-yellow-neon 0px 0px 50px, $color-yellow-neon 0px 0px 75px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

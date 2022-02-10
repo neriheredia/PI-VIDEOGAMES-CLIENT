@@ -1,0 +1,68 @@
+@import "../../config/colors.scss";
+
+.formSearch {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
+
+  .buscandoJuego {
+    position: absolute;
+    font-size: 2em;
+    color: $color-white;
+    text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+      $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+      $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+      $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+  }
+
+  .inputSearch {
+    // display: none;
+    width: 150px;
+    padding: 4px;
+    border: 2px solid $color-cyan-neon;
+    border-radius: 5px;
+    color: $color-white;
+    background: $color-black-bg;
+    @include tablet {
+      width: 120px;
+      margin: 6px;
+    }
+    &:focus {
+      color: $color-white;
+      text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+        $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+        $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+        $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+      outline: none;
+    }
+    &::placeholder {
+      color: $color-cyan-neon;
+    }
+  }
+
+  .btnSearch {
+    // display: none;
+    margin-left: 5px;
+    padding: 4px;
+    font-weight: 600;
+    border: 2px solid $color-cyan-neon;
+    border-radius: 5px;
+    background: $color-black-bg;
+    color: $color-white;
+    text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+      $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+      $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+      $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+    cursor: pointer;
+    &:hover {
+      color: $color-white;
+      background: $color-cyan-neon;
+    }
+  }
+}

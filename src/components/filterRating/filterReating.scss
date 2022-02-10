@@ -1,0 +1,26 @@
+@import "../../config/colors.scss";
+
+.filterInput {
+  margin: 20px;
+  padding: 6px;
+  width: 150px;
+  min-height: 20px;
+  border: 2px solid $color-cyan-neon;
+  border-radius: 5px;
+  color: $color-cyan-neon;
+  //   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+  //     $color-cyan-neon 0px 0px 20px, $color-cyan-neon 0px 0px 30px,
+  //     $color-cyan-neon 0px 0px 40px, $color-cyan-neon 0px 0px 50px,
+  //     $color-cyan-neon 0px 0px 75px;
+  background: $color-black-bg;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:focus {
+    font-weight: 800;
+    border-color: $color-cyan-neon;
+    background: $color-cyan-neon;
+    color: $color-white;
+    outline: none;
+    cursor: pointer;
+  }
+}

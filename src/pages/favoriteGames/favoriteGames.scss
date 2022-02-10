@@ -1,0 +1,29 @@
+@import "../../config/colors.scss";
+
+.contentFavoritesCards {
+  width: 100%;
+  min-height: 100vh;
+  background: $color-black-bg;
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  flex-direction: column;
+  .returnBtnHomeFavorite {
+    margin: 20px;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-align: center;
+    color: $color-white;
+    text-shadow: $color-magenta-neon 0px 0px 5px,
+      $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+      $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+      $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+      $color-magenta-neon 0px 0px 75px;
+  }
+  .bottonFavorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

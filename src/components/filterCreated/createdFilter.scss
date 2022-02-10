@@ -1,0 +1,11 @@
+@import "../../config/colors.scss";
+
+.titleCheck {
+  font-size: 1.5em;
+  color: $color-white;
+  text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+    $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+    $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+    $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+  margin-right: 7px;
+}

@@ -1,0 +1,19 @@
+@import "../../config/colors.scss";
+
+.allResetGamesButton {
+  color: $color-white;
+  font-size: 1.5em;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  background-color: $color-black;
+  text-shadow: $color-cyan-neon 0px 0px 5px, $color-cyan-neon 0px 0px 10px,
+    $color-cyan-neon 0px 0px 15px, $color-cyan-neon 0px 0px 20px,
+    $color-cyan-neon 0px 0px 30px, $color-cyan-neon 0px 0px 40px,
+    $color-cyan-neon 0px 0px 50px, $color-cyan-neon 0px 0px 75px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+@import "../../config/colors.scss";
+
+.ladingPage {
+  width: 100%;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .containLanding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: $color-white;
+      font-size: 5em;
+      letter-spacing: 8px;
+      text-align: center;
+      text-shadow: $color-magenta-neon 0px 0px 5px,
+        $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+        $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+        $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+        $color-magenta-neon 0px 0px 75px;
+      margin-bottom: 40px;
+      z-index: 5;
+    }
+    .goButton {
+      font-family: monospace;
+    }
+  }
+}
+
+//#ff2d95

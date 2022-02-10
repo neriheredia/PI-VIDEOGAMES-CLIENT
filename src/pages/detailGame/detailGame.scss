@@ -1,0 +1,200 @@
+@import "../../config/colors.scss";
+
+.contentDetail {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: $color-black-bg;
+  overflow-y: hidden;
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .fondoDetail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  /* CONTENEDOR IZQUIERDO*/
+  .contentLeft {
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    @include tablet {
+      width: 100vw;
+      align-items: center;
+      //   display: flex;
+      //   justify-self: center;
+    }
+
+    .titleDetailDescription {
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-top: 30px;
+      color: $color-white;
+      letter-spacing: 2px;
+      text-shadow: $color-magenta-neon 0px 0px 5px,
+        $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+        $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+        $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+        $color-magenta-neon 0px 0px 75px;
+    }
+    .titleDetail {
+      text-transform: uppercase;
+      font-size: 3em;
+      color: $color-white;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: $color-magenta-neon 0px 0px 5px,
+        $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+        $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+        $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+        $color-magenta-neon 0px 0px 75px;
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    .descriptionDetail {
+      margin: 10px 0px;
+      color: $color-white;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      text-shadow: $color-yellow-neon 0px 0px 5px,
+        $color-yellow-neon 0px 0px 10px, $color-yellow-neon 0px 0px 15px,
+        $color-yellow-neon 0px 0px 20px, $color-yellow-neon 0px 0px 30px;
+      @include tablet {
+        width: 100vw;
+        text-align: left;
+        margin-right: 20%;
+        padding-right: 50px;
+      }
+    }
+
+    .labelContent {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+
+      .labelDetail {
+        margin: 8px 0px;
+        font-size: 1.8em;
+        color: $color-white;
+        letter-spacing: 2px;
+        text-align: start;
+        text-shadow: $color-magenta-neon 0px 0px 5px,
+          $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+          $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+          $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+          $color-magenta-neon 0px 0px 75px;
+      }
+      .labelTextDetail {
+        margin-top: 6px;
+        margin-left: 10px;
+        font-weight: 600;
+        color: $color-white;
+        font-size: 1.2em;
+        text-shadow: $color-yellow-neon 0px 0px 5px,
+          $color-yellow-neon 0px 0px 10px, $color-yellow-neon 0px 0px 15px,
+          $color-yellow-neon 0px 0px 20px, $color-yellow-neon 0px 0px 30px;
+        @include tablet {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: 40px;
+        }
+      }
+    }
+
+    .contentDetailButton {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+
+      .btnDetailHome {
+        margin-top: 30px;
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid $color-magenta-neon;
+        background: $color-black;
+        color: $color-white;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: $color-magenta-neon 0px 0px 5px,
+          $color-magenta-neon 0px 0px 10px, $color-magenta-neon 0px 0px 15px,
+          $color-magenta-neon 0px 0px 20px, $color-magenta-neon 0px 0px 30px,
+          $color-magenta-neon 0px 0px 40px, $color-magenta-neon 0px 0px 50px,
+          $color-magenta-neon 0px 0px 75px;
+        cursor: pointer;
+      }
+      .btnDetailFavorite {
+        margin-top: 30px;
+        font-size: 1.5em;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid $color-yellow-neon;
+        background: $color-black;
+        color: $color-white;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: $color-yellow-neon 0px 0px 5px,
+          $color-yellow-neon 0px 0px 10px, $color-yellow-neon 0px 0px 15px,
+          $color-yellow-neon 0px 0px 20px, $color-yellow-neon 0px 0px 30px,
+          $color-yellow-neon 0px 0px 40px, $color-yellow-neon 0px 0px 50px,
+          $color-yellow-neon 0px 0px 75px;
+      }
+    }
+  }
+
+  /* CONTENEDOR DERECHO*/
+  .contentRigth {
+    flex: 1;
+    margin: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    z-index: 10;
+    // border: 1px solid $color-yellow-neon;
+    @include tablet {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    img {
+      width: 100%;
+      height: 65%;
+      background-repeat: no-repeat;
+      //   object-fit: cover;
+      border: 2px;
+      box-shadow: 1px 1px 15px $color-magenta-neon;
+      opacity: 1;
+      @include tablet {
+        width: 90%;
+      }
+
+      //   &:hover {
+      //     opacity: 1;
+      //   }
+    }
+  }
+}

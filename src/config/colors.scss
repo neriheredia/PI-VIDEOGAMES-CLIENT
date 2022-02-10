@@ -1,0 +1,15 @@
+//VARIABLES DE PALETA DE COLORES
+$color-black-bg: #020509;
+$color-yellow-neon: #ffce38;
+$color-magenta-neon: #ff0038;
+$color-cyan-neon: #00cffa;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-black-alpha: #0205096e;
+
+//MEDIA QUERIS
+@mixin tablet {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}

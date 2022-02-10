@@ -1,0 +1,12 @@
+@import "./config/colors.scss";
+// CLASE PARA LIMPIAR LOS LINK DE REACT ROUTER DOM
+
+.home {
+  width: 100%;
+  min-width: 100vh;
+  background-color: $color-black-bg;
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
